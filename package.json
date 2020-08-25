@@ -14,24 +14,26 @@
     "vuvuzela": "^1.0.3"
   },
   "deprecated": false,
-  "description": "PouchDB-Sapper is a PouchDB adaptation for Sapper.",
+  "description": "PouchDB-Svelte is a PouchDB adaptation for Svelte Rollup.",
   "jsnext:main": "./lib/index.es.js",
   "keywords": [
     "db",
     "couchdb",
     "pouchdb",
     "sapper",
-    "svelte"
+    "svelte",
+    "rollup"
   ],
   "license": "Apache-2.0",
   "main": "./lib/index.js",
   "module": "./lib/index.es.js",
-  "name": "pouchdb-sapper",
+  "name": "pouchdb-svelte",
   "tags": [
     "db",
     "couchdb",
     "pouchdb",
-    "sapper"
+    "sapper",
+    "rollup"
   ],
   "version": "7.2.2-alpha0.0.7",
   "devDependencies": {
@@ -39,10 +41,10 @@
   },
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/axel-recolet/pouchdb-sapper.git"
+    "url" : "https://github.com/axel-recolet/pouchdb-svelte.git"
   },
   "bugs": { 
-    "url" : "https://github.com/axel-recolet/pouchdb-sapper/issues",
+    "url" : "https://github.com/axel-recolet/pouchdb-svlete/issues",
     "email" : "axel.recolet@outlook.fr"
     }
 }
