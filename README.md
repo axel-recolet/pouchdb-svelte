@@ -22,8 +22,6 @@ export default {
 ```
 
 ```js
-//  src/App.svelte
-
 import PouchDB from 'pouchdb-sapper';
 
 const testDB = new PouchDB('test');
@@ -39,6 +37,7 @@ export default {
     client: {
         plugins: [
             nodePolyfills(),
+            ...
         ]
     }
 }
@@ -46,8 +45,6 @@ export default {
 //not in the server nor in the serviceworker
 ```
 ```js
-//  src/routes/_layout.svelte
-
 import PouchDB from 'pouchdb-sapper';
 
 (() => {
@@ -58,7 +55,7 @@ import PouchDB from 'pouchdb-sapper';
 
 >Notes: 
 >- You can put this script in any .svelte file in your app.
->- It is really important to block Sapper in this script. Because [SSR](https://sapper.svelte.dev/docs#Making_a_component_SSR_compatible) will try to run pouchdb-sapper (pouchdb-browser) and attempt to create the LevelDB database on the server.
+>- It is really important to block [Sapper SSR](https://sapper.svelte.dev/docs#Making_a_component_SSR_compatible) in this script. Because SSR will try to run pouchdb-sapper (pouchdb-browser) and attempt to create the LevelDB database on the server.
 This is not a good thing for two reasons:
 >1. The LevelDB adapter is not present in the [pouchdb-browser](https://pouchdb.com/custom.html) vanilla.
 >2. If you want to run a LevelDB database on your server (polka / express), it is better to use [pouchdb or pouchdb-node](https://pouchdb.com/custom.html).
