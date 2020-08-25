@@ -6,7 +6,7 @@
   "bundleDependencies": false,
   "dependencies": {
     "argsarray": "^0.0.1",
-    "immediate-sapper": "^0.0.3",
+    "immediate": "^3.3.0",
     "inherits": "^2.0.4",
     "node-fetch": "^2.6.0",
     "spark-md5": "^3.0.0",
@@ -36,15 +36,13 @@
     "rollup"
   ],
   "version": "7.2.2-alpha0.0.7",
-  "devDependencies": {
-    "pouchdb-browser": "^7.2.2"
-  },
+  "devDependencies": {},
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/axel-recolet/pouchdb-svelte.git"
+    "type": "git",
+    "url": "https://github.com/axel-recolet/pouchdb-svelte.git"
   },
-  "bugs": { 
-    "url" : "https://github.com/axel-recolet/pouchdb-svlete/issues",
-    "email" : "axel.recolet@outlook.fr"
-    }
+  "bugs": {
+    "url": "https://github.com/axel-recolet/pouchdb-svlete/issues",
+    "email": "axel.recolet@outlook.fr"
+  }
 }
