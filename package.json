@@ -6,7 +6,7 @@
   "bundleDependencies": false,
   "dependencies": {
     "argsarray": "^0.0.1",
-    "immediate": "^3.3.0",
+    "immediate": "git+https://github.com/axel-recolet/immediate.git",
     "inherits": "^2.0.4",
     "node-fetch": "^2.6.0",
     "spark-md5": "^3.0.0",
